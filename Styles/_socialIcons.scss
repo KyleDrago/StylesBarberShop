@@ -1,0 +1,63 @@
+﻿$red: #9E1310;
+$blue: #081F4B;
+
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    line-height: 52px;
+    text-align: center;
+    background-color: $blue;
+}
+
+.iconNav {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: 48.2%;
+    bottom: 4%;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0,232,232,0.8);
+}
+
+.icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+
+.icon-effect .icon {
+    transition: all .5s;
+}
+
+.icon-effect .icon:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px $blue;
+    transition: all .5s;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+.icon-effect-1a .icon:hover {
+    background-color: $red;
+    color: white;
+}
+
+.icon-effect-1a .icon:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
