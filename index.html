@@ -2,13 +2,18 @@
 <!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <html lang="en">
 <head>
-    <!--  Global Site Tag (gtag.js) - Google Analytics  -->
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107380689-1"></script>
-    <script></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107380689-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107380689-1');
+    </script>
     <meta charset="utf-8" />
     <title>Style's Barber Shop | Scotia, NY</title>
-    <meta name="description" content="Style's Barber Shop has served the Scotia, NY area for over 22 years. We're a real men's barbershop where you can get a great cut and straight razor shave." />
+    <meta name="description" content="Style's Barber Shop has served the Scotia, NY area for over 22 years. We're a real men's barbershop where you can get a great cut and shave." />
     <link rel="stylesheet" href="StyleSheet.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +27,7 @@
         <img class="shop" src="StylesBarberShop.jpg" alt="Style's Barbershop" />
         <p>
             Phone:
-            <span itemprop="telephone">(518)377-3087</span><br />
+            <span itemprop="telephone"><a href="tel:1-518-377-3087">(518)377-3087</a> </span><br />
             Address:
             <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="streetAddress">212 Mohawk Ave</span>,
